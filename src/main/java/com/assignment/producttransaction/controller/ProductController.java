@@ -49,7 +49,7 @@ public class ProductController {
      *
      * @param productId the product id
      */
-    @GetMapping("/deleteProduct")
+    @DeleteMapping("/deleteProduct")
     private void deleteProduct(@RequestParam Integer productId) {
         service.deleteProduct(productId);
     }
