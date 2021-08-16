@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: dbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MYSQL
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+
+server:
+  servlet:
+  contextPath:
+Spring:
+  jpa:
+    database-platform: org.hibernate.dialect.mysql5dialect
+
+  liquibase:
+    change-log: classpath:db/db.master.xml
